@@ -1,0 +1,8 @@
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   print('it worke wobwoc twied to kwick ywou bwut whe sway no fucky wucky kicky here')
+end)
+print('anti kwick inject no fucky wucky here')
